@@ -487,25 +487,6 @@ summary:focus-visible {
   background-attachment: scroll;
 }
 
-.hero__video-wrap {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.hero__video-wrap video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero--home .hero__video-wrap {
-    display: none;
-  }
-}
-
 .hero--page.hero--pos-about .hero__bg {
   background-image: url("1.png");
   background-position: 20% 40%;
@@ -1068,8 +1049,7 @@ summary:focus-visible {
   }
 }
 
-.media-gallery__item,
-.media-gallery__video {
+.media-gallery__item {
   margin: 0;
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -1083,19 +1063,10 @@ summary:focus-visible {
   object-fit: cover;
 }
 
-.media-gallery__item figcaption,
-.media-gallery__video figcaption {
+.media-gallery__item figcaption {
   padding: 0.65rem 1rem;
   font-size: 0.9rem;
   color: var(--color-text-muted);
-}
-
-.media-gallery__video video {
-  width: 100%;
-  display: block;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  background: var(--color-gray-900);
 }
 
 .page-video-banner {
@@ -1106,7 +1077,7 @@ summary:focus-visible {
   background: var(--color-gray-900);
 }
 
-.page-video-banner video {
+.page-video-banner img {
   width: 100%;
   display: block;
   max-height: 280px;
@@ -1131,26 +1102,18 @@ summary:focus-visible {
   box-shadow: var(--shadow-md);
 }
 
-.contact-aside-media > img {
+.contact-aside-media > img,
+.contact-aside-media img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
-.contact-aside-video {
-  margin: 1rem 0 0;
+.contact-aside-media + .contact-aside-media {
+  margin-top: 1.25rem;
 }
 
-.contact-aside-video video {
-  width: 100%;
-  display: block;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: var(--radius-md);
-  background: var(--color-gray-900);
-}
-
-.contact-aside-video figcaption {
+.contact-aside-media figcaption {
   margin-top: 0.5rem;
   font-size: 0.88rem;
 }
