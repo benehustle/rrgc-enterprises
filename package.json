@@ -1,0 +1,11 @@
+{
+  "name": "rrgc-enterprises",
+  "private": true,
+  "description": "RRGC Enterprises static website",
+  "scripts": {
+    "deploy": "wrangler pages deploy . --project-name=rrgc-enterprises --branch=main"
+  },
+  "devDependencies": {
+    "wrangler": "^4.81.1"
+  }
+}

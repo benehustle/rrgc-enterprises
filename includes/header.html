@@ -1,0 +1,69 @@
+<header class="header">
+  <div class="header__inner">
+    <a class="header__logo" href="index.html">
+      <img
+        src="assets/logo.png"
+        width="200"
+        height="60"
+        alt="RRGC Enterprises logo featuring stylised blue and green 3D lettering with a dynamic orbiting swoosh and star."
+      />
+      <span class="header__logo-text">RRGC</span>
+    </a>
+
+    <nav class="header__nav-desktop" aria-label="Primary">
+      <ul class="header__links">
+        <li><a href="index.html" data-nav-link>Home</a></li>
+        <li><a href="about.html" data-nav-link>About</a></li>
+        <li><a href="services.html" data-nav-link>Services</a></li>
+        <li><a href="contact.html" data-nav-link>Contact</a></li>
+      </ul>
+      <a class="btn btn--primary header__cta-phone" href="tel:+61451033226"
+        >0451 033 226</a
+      >
+    </nav>
+
+    <button
+      type="button"
+      class="header__toggle"
+      data-nav-toggle
+      aria-expanded="false"
+      aria-controls="nav-drawer"
+      aria-label="Open menu"
+    >
+      <span class="header__toggle-bar"></span>
+    </button>
+  </div>
+</header>
+
+<div
+  class="nav-drawer"
+  id="nav-drawer"
+  data-nav-drawer
+  aria-hidden="true"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Mobile menu"
+>
+  <div class="nav-drawer__overlay" data-nav-overlay></div>
+  <div class="nav-drawer__panel">
+    <button
+      type="button"
+      class="nav-drawer__close"
+      data-nav-close
+      aria-label="Close menu"
+    >
+      ×
+    </button>
+    <ul class="nav-drawer__list">
+      <li><a href="index.html" data-drawer-link data-nav-link>Home</a></li>
+      <li><a href="about.html" data-drawer-link data-nav-link>About</a></li>
+      <li><a href="services.html" data-drawer-link data-nav-link>Services</a></li>
+      <li><a href="contact.html" data-drawer-link data-nav-link>Contact</a></li>
+    </ul>
+    <div class="nav-drawer__cta">
+      <a class="btn btn--primary btn--full" href="tel:+61451033226" data-drawer-link
+        >0451 033 226</a
+      >
+    </div>
+  </div>
+</div>
