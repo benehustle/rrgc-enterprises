@@ -79,6 +79,15 @@ function initNav() {
 /* -----------------------------------------------------------------------------
    setActiveNavLink — pathname vs href
    ----------------------------------------------------------------------------- */
+const SERVICE_PAGE_FILES = new Set([
+  "services.html",
+  "autonomous-boat-hire.html",
+  "inflatable-islands.html",
+  "commercial-water-cleaning-solutions.html",
+  "franchise-distributor-opportunities.html",
+  "bespoke-inflatable-vehicle-design.html",
+]);
+
 function setActiveNavLink() {
   let path = window.location.pathname.split("/").pop();
   if (!path || path === "") path = "index.html";
@@ -91,7 +100,9 @@ function setActiveNavLink() {
     const isIndex =
       path === "index.html" && (file === "index.html" || href === "index.html");
     const sameFile = file === path;
-    if (isIndex || sameFile) {
+    const isServicesHub =
+      link.hasAttribute("data-nav-services") && SERVICE_PAGE_FILES.has(path);
+    if (isIndex || sameFile || isServicesHub) {
       link.classList.add("is-active");
     }
   });

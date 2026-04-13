@@ -260,6 +260,83 @@ summary:focus-visible {
   text-underline-offset: 4px;
 }
 
+.header__links-item--dropdown {
+  position: relative;
+}
+
+.header__links-item--dropdown > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.header__links-item--dropdown > a::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  opacity: 0.65;
+}
+
+.header__dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  z-index: 1100;
+  min-width: min(320px, calc(100vw - 48px));
+  margin: 0;
+  padding: 0.4rem 0;
+  list-style: none;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, 6px);
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+}
+
+.header__dropdown a {
+  display: block;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  white-space: normal;
+  max-width: 22rem;
+  line-height: 1.35;
+}
+
+.header__dropdown a:hover,
+.header__dropdown a:focus-visible {
+  color: var(--color-primary);
+  background: var(--color-gray-50);
+}
+
+.header__dropdown a.is-active {
+  color: var(--color-primary);
+  background: rgba(var(--color-primary-rgb), 0.08);
+  text-decoration: none;
+}
+
+.header__links-item--dropdown:focus-within .header__dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .header__links-item--dropdown:hover .header__dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+  }
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -447,6 +524,39 @@ summary:focus-visible {
 
 .nav-drawer__list a.is-active {
   color: var(--color-white);
+}
+
+.nav-drawer__item--sub > a {
+  font-weight: 700;
+}
+
+.nav-drawer__sub {
+  list-style: none;
+  margin: 0.35rem 0 0.75rem;
+  padding: 0 0 0 0.75rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-drawer__sub li {
+  margin: 0;
+}
+
+.nav-drawer__sub a {
+  padding: 0.45rem 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-bottom: none;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.nav-drawer__sub a:hover {
+  color: var(--color-white);
+}
+
+.nav-drawer__sub a.is-active {
+  color: var(--color-white);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .nav-drawer__cta {
