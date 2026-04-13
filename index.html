@@ -68,8 +68,19 @@
     <a href="#main" class="sr-only">Skip to main content</a>
     <div id="header-placeholder"></div>
     <main id="main">
-      <section class="hero" aria-label="Introduction">
+      <section class="hero hero--home" aria-label="Introduction">
         <div class="hero__bg" role="presentation"></div>
+        <div class="hero__video-wrap" aria-hidden="true">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="assets/Header%20Image%202.png"
+          >
+            <source src="assets/video%20Header.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div class="hero__overlay" role="presentation"></div>
         <div class="hero__content">
           <div class="hero__inner">
@@ -157,6 +168,15 @@
           </p>
           <div class="grid-services grid-services--home animate-stagger">
             <a class="service-card" href="autonomous-boat-hire.html">
+              <div class="service-card__thumb">
+                <img
+                  src="assets/1.png"
+                  width="800"
+                  height="600"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
               <div class="service-card__icon" aria-hidden="true">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
                   <path
@@ -175,6 +195,15 @@
               </div>
             </a>
             <a class="service-card" href="inflatable-islands.html">
+              <div class="service-card__thumb">
+                <img
+                  src="assets/2.png"
+                  width="800"
+                  height="600"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
               <div class="service-card__icon" aria-hidden="true">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M3 17h18v2H3v-2zm0-6h18v2H3v-2zm0-6h18v2H3V5z" />
@@ -191,6 +220,15 @@
               </div>
             </a>
             <a class="service-card" href="commercial-water-cleaning-solutions.html">
+              <div class="service-card__thumb">
+                <img
+                  src="assets/3.png"
+                  width="800"
+                  height="600"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
               <div class="service-card__icon" aria-hidden="true">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
                   <path
@@ -209,6 +247,15 @@
               </div>
             </a>
             <a class="service-card" href="franchise-distributor-opportunities.html">
+              <div class="service-card__thumb">
+                <img
+                  src="assets/4.png"
+                  width="800"
+                  height="600"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
               <div class="service-card__icon" aria-hidden="true">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
                   <path
@@ -227,6 +274,15 @@
               </div>
             </a>
             <a class="service-card" href="bespoke-inflatable-vehicle-design.html">
+              <div class="service-card__thumb">
+                <img
+                  src="assets/5.png"
+                  width="800"
+                  height="600"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
               <div class="service-card__icon" aria-hidden="true">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
                   <path
@@ -265,12 +321,11 @@
         <div class="container about-split">
           <div class="about-split__media animate-on-scroll">
             <img
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80&fit=crop"
-              alt="RRGC Enterprises team"
+              src="assets/Header%20images%201.png"
+              alt="Interior of a modern autonomous electric inflatable craft with teal and white seating"
               loading="lazy"
-              crossorigin="anonymous"
-              width="560"
-              height="420"
+              width="960"
+              height="720"
               class="about-photo"
             />
           </div>
@@ -422,6 +477,75 @@
                 procurement teams know exactly what ships when.
               </p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section--white media-gallery-section"
+        aria-labelledby="media-gallery-heading"
+      >
+        <div class="container">
+          <h2 id="media-gallery-heading" class="section__heading animate-on-scroll">
+            Craft in the showroom and on the water
+          </h2>
+          <p class="section__intro muted animate-on-scroll">
+            Stills from our autonomous electric inflatables plus short clips you can
+            play with sound off—ideal for sharing with councils or resort boards.
+          </p>
+          <div class="media-gallery-grid animate-stagger">
+            <figure class="media-gallery__item">
+              <img
+                src="assets/2.png"
+                width="800"
+                height="600"
+                alt="Wide view of inflatable lounge seating and synthetic teak deck"
+                loading="lazy"
+              />
+              <figcaption>Showroom layout and deck finishes</figcaption>
+            </figure>
+            <figure class="media-gallery__item">
+              <img
+                src="assets/3.png"
+                width="800"
+                height="600"
+                alt="Inflatable craft interior with curved teal tubes and white canopy"
+                loading="lazy"
+              />
+              <figcaption>Canopy structure and helm detail</figcaption>
+            </figure>
+            <figure class="media-gallery__item">
+              <img
+                src="assets/4.png"
+                width="800"
+                height="600"
+                alt="Overhead-style view of teal and white inflatable seating on wood-look flooring"
+                loading="lazy"
+              />
+              <figcaption>Passenger space from above</figcaption>
+            </figure>
+            <figure class="media-gallery__video">
+              <video controls playsinline muted preload="metadata" poster="assets/Header%20Image%202.png">
+                <source src="assets/Untitled%20(1000%20x%201000%20px).mp4" type="video/mp4" />
+              </video>
+              <figcaption>Walkthrough — square format</figcaption>
+            </figure>
+            <figure class="media-gallery__video">
+              <video controls playsinline muted preload="metadata" poster="assets/5.png">
+                <source src="assets/Untitled%20(1000%20x%201000%20px)%20(3).mp4" type="video/mp4" />
+              </video>
+              <figcaption>Alternate angle and motion study</figcaption>
+            </figure>
+            <figure class="media-gallery__item">
+              <img
+                src="assets/5.png"
+                width="800"
+                height="600"
+                alt="Interior of electric inflatable boat with digital displays in the background"
+                loading="lazy"
+              />
+              <figcaption>Technology-forward guest experience</figcaption>
+            </figure>
           </div>
         </div>
       </section>
