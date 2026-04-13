@@ -6,10 +6,3 @@ Thumbs.db
 node_modules/
 .wrangler/
 .cursor/
-
-# Draft / oversized media (not linked by site; keep locally if needed)
-assets/*.mp4
-assets/[0-9].png
-assets/Header*.png
-assets/Untitled*.png
-assets/Untitled*.mp4
