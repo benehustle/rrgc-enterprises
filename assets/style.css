@@ -1028,7 +1028,7 @@ summary:focus-visible {
 }
 
 /* -----------------------------------------------------------------------------
-   Media gallery & page video blocks
+   Media gallery & page banner images
    ----------------------------------------------------------------------------- */
 
 .media-gallery-grid {
@@ -1696,8 +1696,4 @@ body.has-call-bar {
 /* Main offset for fixed header */
 #main {
   padding-top: 0;
-}
-
-.page-content {
-  padding-bottom: 2rem;
 }
